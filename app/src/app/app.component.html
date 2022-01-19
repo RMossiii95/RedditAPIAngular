@@ -1,0 +1,6 @@
+<div *ngFor="let post of this.posts">
+  <p>{{post.data.title}}</p>
+  <img [src]="post.data.thumbnail">
+  <a [href]="'http://reddit.com/' + post.data.url">Click Here</a>
+
+</div>
